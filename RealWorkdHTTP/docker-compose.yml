@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    image: golang
+    restart: always
+    ports:
+      - 18888:18888
+    volumes:
+      - type: bind
+        source: .
+        target: /go/src
+
+    command: /bin/bash -c "cd /go/src && go run server.go"
