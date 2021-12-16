@@ -5,6 +5,7 @@ services:
     restart: always
     ports:
       - 18888:18888
+      - 18443:18443
     volumes:
       - type: bind
         source: .
