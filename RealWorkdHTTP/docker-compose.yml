@@ -10,5 +10,4 @@ services:
       - type: bind
         source: .
         target: /go/src
-
-    command: /bin/bash -c "cd /go/src && go run server.go"
+    tty: true
